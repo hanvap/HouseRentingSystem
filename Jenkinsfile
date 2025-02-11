@@ -1,7 +1,7 @@
 pipeline {  
     agent {  
         docker {  
-            image 'mcr.microsoft.com/dotnet/sdk:7.0'  // Заменете с желаната версия на .NET SDK  
+            image 'mcr.microsoft.com/dotnet/sdk:6.0'  // Заменете с желаната версия на .NET SDK  
         }  
     }  
 
