@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('Restore') {
       steps {
-        bat 'dotnet restore --interactive'  # --interactive може да помогне при прокси
+        bat 'dotnet restore --interactive' 
       }
     }
     stage('Build') {
