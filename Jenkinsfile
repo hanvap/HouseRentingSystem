@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Restores NuGet packages for the solution/project
-                    sh 'dotnet restore'
+                    bat 'dotnet restore'
                 }
             }
         }
@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     // Builds the project without restoring dependencies
-                    sh 'dotnet build --no-restore'
+                    bat 'dotnet build --no-restore'
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Runs all tests in the solution
-                    sh 'dotnet test'
+                    bat 'dotnet test'
                 }
             }
         }
